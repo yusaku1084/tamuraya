@@ -1,0 +1,298 @@
+@charset "UTF-8";
+.inner {
+  width: calc(100% - 92px);
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.mainKv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 360px;
+}
+
+.mainKv--about {
+  background: url(https://unsplash.it/630/400) no-repeat;
+  background-size: cover;
+}
+
+.mainKv .mainKv__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 118px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 38px;
+}
+
+.mainKv .mainKv__title::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 100%;
+  background: url(../img/logo.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.about-table {
+  padding-top: 82px;
+  padding-bottom: 93px;
+  background: #ede8dc;
+}
+.about-table dl {
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.75;
+}
+
+.about-table dl dt {
+  width: 20%;
+  padding: 12px 0 12px 35px;
+  border-bottom: 1px solid #000;
+}
+
+.about-table dl dd {
+  width: 80%;
+  padding: 12px 0;
+  border-bottom: 1px solid #000;
+}
+
+.about-map {
+  background: #ede8dc;
+  padding-bottom: 100px;
+}
+
+.about-map .map__title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.about-map .map__content {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.about-map .map__content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  background: #ede8dc;
+  padding-bottom: 66px;
+}
+
+.contact .contact__wrapper {
+  display: flex;
+}
+
+.contact .contact__wrapper .contact__left {
+  max-width: 474px;
+  width: 40%;
+  position: relative;
+  padding-bottom: 26%;
+}
+
+.contact .contact__wrapper .contact__right {
+  width: 60%;
+  background-color: #f3f7fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .contact__wrapper .contact__left img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.contact .contact__wrapper .contact__tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px dotted #626262;
+  padding-bottom: 18px;
+}
+
+.contact .contact__wrapper .contact__icon {
+  width: 100px;
+}
+
+.contact .contact__wrapper .contact__txt {
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  padding-left: 26px;
+}
+
+.contact .contact__wrapper .contact__tel__number {
+  margin-bottom: 0.2em;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.contact .contact__wrapper .contact__tel__time {
+  font-size: 25px;
+}
+
+.contact .contact__wrapper .contact__mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .contact__wrapper .contact__mail__txt {
+  font-size: 32px;
+  line-height: 1.75;
+}
+
+.contact .contact__wrapper .contact__mail__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: #00479d;
+  font-size: 30px;
+  line-height: 45px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1180px) {
+  .about-table dl {
+    font-size: 1.6vw;
+  }
+
+  .about-map .map__title {
+    font-size: 2.5vw;
+  }
+
+  .contact .contact__wrapper .contact__tel__number {
+    font-size: 2.5vw;
+  }
+
+  .contact .contact__wrapper .contact__tel__time {
+    font-size: 2vw;
+  }
+
+  .contact .contact__wrapper .contact__icon {
+    width: 18%;
+  }
+
+  .contact .contact__wrapper .contact__mail__txt {
+    font-size: 2.5vw;
+  }
+
+  .contact .contact__wrapper .contact__mail__button {
+    width: 13em;
+    height: 1.5em;
+    font-size: 2.5vw;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    width: 96%;
+  }
+
+  .mainKv {
+    height: 200px;
+  }
+
+  .mainKv .mainKv__title {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .mainKv .mainKv__title::before {
+    width: 40px;
+  }
+
+  .about-table {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .about-table dl {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .about-table dl dt {
+    width: 40%;
+    padding: 8px 0;
+  }
+
+  .about-table dl dd {
+    width: 60%;
+    padding: 8px 0;
+  }
+
+  .about-map {
+    padding-bottom: 40px;
+  }
+
+  .about-map .map__title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .contact {
+    padding-bottom: 40px;
+  }
+
+  .contact .contact__wrapper {
+    display: block;
+  }
+
+  .contact .contact__wrapper .contact__left {
+    max-width: none;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
+  .contact .contact__wrapper .contact__right {
+    width: 100%;
+  }
+
+  .contact .contact__wrapper .contact__tel {
+    padding: 18px 0;
+  }
+
+  .contact .contact__wrapper .contact__tel__number {
+    font-size: 18px;
+  }
+
+  .contact .contact__wrapper .contact__tel__time {
+    font-size: 16px;
+  }
+
+  .contact .contact__wrapper .contact__mail {
+    padding: 18px 0;
+  }
+
+  .contact .contact__wrapper .contact__mail__txt {
+    font-size: 18px;
+  }
+
+  .contact .contact__wrapper .contact__mail__button {
+    font-size: 18px;
+  }
+}
